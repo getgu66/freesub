@@ -15,9 +15,9 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  server: 104.18.26.90
+  server: 104.16.111.193
   port: 443
   udp: true
   type: vless
@@ -25,7 +25,6 @@ proxies:
   tls: true
   servername: v2ray.simspeedup.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws

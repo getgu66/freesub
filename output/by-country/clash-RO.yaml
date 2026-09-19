@@ -5,14 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  server: 154.46.31.106
-  port: 443
+  server: 162.249.126.6
+  port: 8443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: hysteria2
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hopp-germany-new.ddnsguru.com
+  skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  server: 85.204.107.177
+  server: 85.204.107.176
   port: 8443
   udp: true
   type: hysteria2
@@ -25,7 +26,7 @@ proxies:
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: speedtest.tinkoff.ru
+  sni: 185.156.44.99
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   server: 46.28.67.55
@@ -39,31 +40,8 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
-  server: 45.43.166.56
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4CD55C5_trial
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sEzXu5KZcPPaT5ZKj8gBIOa4ana3Jq75-iZSMQPW9BY
-    short-id: 8c3f17a4d92be560
-  servername: travel.yandex.ru
-  client-fingerprint: qq
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
-  server: hy2.aspidnet.xyz
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
   server: 146.70.124.85
   port: 443
   udp: true
@@ -76,7 +54,7 @@ proxies:
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
   server: 193.163.203.253
   port: 443
   udp: true
@@ -88,15 +66,7 @@ proxies:
     public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
     short-id: 5ee019e02e6ed99a
   servername: yandex.ru
-  client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 09 - xiaohe
-  server: 162.249.126.7
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hopp-germany-new.ddnsguru.com
-  skip-cert-verify: false
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -108,9 +78,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -122,8 +89,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 08 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 09 - xiaohe
 rules:
 - MATCH,PROXIES
