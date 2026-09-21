@@ -5,17 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 155.117.19.17
+  server: 104.21.70.21
   port: 443
   udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+  type: vless
+  uuid: fee1da7e-a258-4456-8e5e-8ecf6518ed12
+  tls: true
+  servername: ez-82c7e7.abobaba.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: ez-82c7e7.abobaba.workers.dev
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  server: 36.224.185.143
+  server: r3mrcg001286ek2.cybervena.com
   port: 50099
   udp: true
   type: ss
@@ -31,9 +35,52 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: ios
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
+  client-fingerprint: safari
+- name: 🇩🇪 德国 (Germany) 04 (家宽) - xiaohe
+  server: 165.232.40.20
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /pay/ja/contact?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 05 (家宽) - xiaohe
+  server: 178.104.202.46
+  port: 4433
+  udp: true
+  type: vless
+  uuid: 7fa84611-065f-477d-be7a-88db3ecdfaca
+  tls: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
+  server: clhkzzzdbgwxxndnlm.cfooov.xyz
+  port: 41341
+  udp: true
+  type: vless
+  uuid: 17ab31f7-c021-4aec-83b2-ab48de8886bd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: HGk0MQ7l4mWgJo1-7PctGx5pf88HECBpLRUtBSemkzY
+    short-id: b93f2026953855c5
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
+  server: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
   port: 443
   udp: true
   type: vmess
@@ -41,12 +88,12 @@ proxies:
   alterId: 0
   cipher: auto
   tls: true
-  servername: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
+  servername: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
   server: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
   port: 443
   udp: true
@@ -60,6 +107,22 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
+- name: 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - xiaohe
+  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
+  port: 443
+  udp: true
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,8 +131,12 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 04 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 05 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,7 +145,11 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+  - 🇩🇪 德国 (Germany) 04 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 05 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
