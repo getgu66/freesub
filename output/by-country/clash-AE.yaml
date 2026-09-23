@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: cc81171e-c70e-45fb-be7d-1bf0afd1258e
+  uuid: f3b97a20-f820-4966-bc70-6bd57cdc95f2
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -23,7 +23,7 @@ proxies:
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
@@ -40,7 +40,7 @@ proxies:
   servername: dzen.ru
   client-fingerprint: edge
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 85.204.107.174
+  server: 85.204.107.183
   port: 8080
   udp: true
   type: hysteria2
