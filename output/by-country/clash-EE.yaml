@@ -13,8 +13,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: estproxy4.lockdwn.com
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 109.206.241.10
   port: 449
